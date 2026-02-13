@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to XiangJsonCraft</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- 引入框架UMD文件（全局变量模式，无需ESModule） -->
+    <script src="./node_modules/xiangjsoncraft/dist/xiangjsoncraft.umd.js"></script>
+    <!-- 动态样式容器（框架自动注入样式） -->
+    <style id="xiangjsoncraft-styles"></style>
+</head>
+
+<body class="loaded">
+    <div class="welcome-container">
+        <header class="welcome-header">
+            <div class="logo-container">
+                <div class="logo"></div>
+            </div>
+            <h1 class="main-title"></h1>
+            <p class="subtitle"></p>
+        </header>
+
+        <main class="features-section">
+            <div class="feature-card" id="feature-1"></div>
+            <div class="feature-card" id="feature-2"></div>
+            <div class="feature-card" id="feature-3"></div>
+        </main>
+
+        <section class="action-section">
+            <a href="https://www.npmjs.com/package/xiangjsoncraft" target="_blank">
+                <button class="primary-button"></button>
+            </a>
+            <p class="additional-info"></p>
+        </section>
+
+        <footer class="page-footer">
+            <p class="copyright"></p>
+            <div class="social-links"></div>
+        </footer>
+    </div>
+
+    <script>
+        // 页面加载完成后执行框架渲染
+        window.onload = function () {
+            // 校验框架是否加载成功
+            if (window.XiangJsonCraft && window.XiangJsonCraft.renderJsonStyles) {
+                window.XiangJsonCraft.renderJsonStyles();
+                console.log('✅ XiangJsonCraft 渲染成功！修改 config.json 自定义页面');
+            } else {
+                alert('❌ XiangJsonCraft 框架加载失败，请检查依赖安装！');
+            }
+        };
+    </script>
+</body>
+
+</html>

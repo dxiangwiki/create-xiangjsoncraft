@@ -1,0 +1,22 @@
+{
+    "name": "create-xiangjsoncraft",
+    "version": "2.0.4",
+    "description": "XiangJsonCraft 脚手架初始化工具",
+    "type": "module",
+    "bin": {
+        "create-xiangjsoncraft": "./index.js"
+    },
+    "dependencies": {
+        "fs-extra": "^11.2.0",
+        "inquirer": "^9.2.16",
+        "path": "^0.12.7"
+    },
+    "peerDependencies": {
+        "xiangjsoncraft": "^2.0.4"
+    },
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dxiangwiki/xiangjsoncraft.git"
+    }
+}

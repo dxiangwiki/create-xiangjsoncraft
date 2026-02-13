@@ -1,0 +1,17 @@
+{
+    "name": "{{projectName}}",
+    "version": "1.0.0",
+    "description": "XiangJsonCraft 2.0 Project - Write JSON, Get a Website",
+    "type": "commonjs",
+    "scripts": {
+        "start": "npx live-server . --port=3000",
+        "test": "echo \"✅ XiangJsonCraft 测试成功！\""
+    },
+    "dependencies": {
+        "xiangjsoncraft": "^2.0.4"
+    },
+    "devDependencies": {
+        "live-server": "^1.2.2"
+    },
+    "license": "MIT"
+}
